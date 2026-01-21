@@ -88,19 +88,3 @@
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
-
-## ETL: Run instructions
-
-- **Run all steps:** Execute the runner which runs Extract -> Transform -> Load:
-
-```bash
-python run_etl.py
-```
-
-- **Run individual steps:**
-
-- Extract: `python -m etl.extract`
-- Transform: `python -m etl.transform`
-- Load: `python -m etl.load`
-
-The scripts expect raw CSV files in `dataset/raw-data/` and will write the cleaned dataset to `dataset/clean-data/cleaned_sales_data.csv`.
