@@ -26,17 +26,17 @@ Features data (8,190 records): Contains external factors like temperature, fuel 
 
 
 ## Hypothesis and how to validate?
-* Hypothesis 1: Promotional markdowns significantly increase weekly sales.
-
-Validation: Compare average sales during weeks with markdowns vs. weeks without, using statistical tests (t-test) and correlation analysis between Total_MarkDown and Weekly_Sales.
-
-* Hypothesis 2: Holiday periods result in higher sales compared to non-holiday periods.
+* Hypothesis 1:  Holiday periods result in higher sales compared to non-holiday periods. 
 
 Validation: Use box plots and statistical comparisons of sales distributions for holiday vs. non-holiday weeks, calculating percentage differences.
 
-* Hypothesis 3: Store type and size influence sales performance.
+* Hypothesis 2: Store type and size influence sales performance.
 
 Validation: Group sales by store type and size, use bar charts and ANOVA tests to identify significant differences.
+
+* Hypothesis 3: Promotional markdowns significantly increase weekly sales.
+
+Validation: Compare average sales during weeks with markdowns vs. weeks without, using statistical tests (t-test) and correlation analysis between Total_MarkDown and Weekly_Sales. 
 
 * Hypothesis 4: External factors like temperature and unemployment correlate with sales.
 
@@ -111,19 +111,6 @@ Without AI assistance, the project would have required more manual research for 
 * Strategies: Used GitHub Copilot for code suggestions, modularized code into sections, and tested incrementally.
 * Next skills/tools: Advanced time series analysis (ARIMA models), machine learning for sales prediction (scikit-learn pipelines), and cloud deployment (AWS/Docker) for scalable dashboards.
 
-## Deployment
-### Heroku
-
-* The App live link is: https://retail-sales-analysis.herokuapp.com/ (placeholder - actual deployment pending app.py creation)
-* Set the runtime.txt Python version to a Heroku-20 stack currently supported version (e.g., python-3.9.17).
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis Libraries
 **pandas**: Used for data manipulation and ETL operations, e.g., `pd.merge()` to combine sales, stores, and features datasets.
@@ -135,8 +122,8 @@ Without AI assistance, the project would have required more manual research for 
 
 ## Credits 
 
-In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+LMS
+Githug Copilot
 
 ### Content 
 
