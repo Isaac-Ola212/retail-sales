@@ -8,9 +8,9 @@
 ## Dataset Content
 * The dataset consists of retail sales data from a major retailer, including three main CSV files:
 
-- Sales data (421,570 records): Contains weekly sales figures, store and department identifiers, dates, and holiday indicators.
-- Store data (45 records): Includes store types (A, B, C) and sizes.
-- Features data (8,190 records): Contains external factors like temperature, fuel prices, promotional markdowns (5 types), CPI, unemployment rates, and holiday flags.
+Sales data (421,570 records): Contains weekly sales figures, store and department identifiers, dates, and holiday indicators.
+Store data (45 records): Includes store types (A, B, C) and sizes.
+Features data (8,190 records): Contains external factors like temperature, fuel prices, promotional markdowns (5 types), CPI, unemployment rates, and holiday flags.
 
 * The combined dataset after merging has approximately 421,570 rows with 17 columns. The data spans multiple years and covers 45 stores across different types and sizes. The total size is reasonable (under 100MB) and fits within repository limits.
 
@@ -79,9 +79,9 @@ Limitations: Correlation doesn't imply causation; large dataset requires samplin
 * Large dataset (421K+ rows) caused performance issues with full scatter plots, addressed by random sampling (5K-10K points). No missing data issues after cleaning, but markdown columns had many NAs filled with zeros.
 
 * Generative AI (GitHub Copilot) assisted in:
-- Ideation: Generating initial code structures for ETL pipelines and visualization templates.
-- Design thinking: Suggesting appropriate plot types and color schemes for different data relationships.
-- Code optimization: Refactoring repetitive visualization code into functions and improving pandas operations for efficiency.
+Ideation: Generating initial code structures for ETL pipelines and visualization templates.
+Design thinking: Suggesting appropriate plot types and color schemes for different data relationships.
+Code optimization: Refactoring repetitive visualization code into functions and improving pandas operations for efficiency.
 Without AI assistance, the project would have required more manual research for visualization best practices and debugging common pandas errors.
 
 
@@ -91,10 +91,10 @@ Without AI assistance, the project would have required more manual research for 
 
 ## Dashboard Design
 * The project uses a Jupyter Notebook as the primary interactive "dashboard" with multiple sections:
-  - **ETL Section**: Code cells for data loading, merging, and cleaning with output displays.
-  - **Matplotlib Section**: Static plots including line charts for sales trends, bar charts for store types, and scatter plots for temperature vs sales.
-  - **Seaborn Section**: Enhanced static visualizations with regression lines, box plots for holiday analysis, and correlation heatmaps.
-  - **Plotly Section**: Interactive widgets including hover-enabled scatter plots, dynamic bar charts, box plots, histograms, and interactive heatmaps.
+  **ETL Section**: Code cells for data loading, merging, and cleaning with output displays.
+  **Matplotlib Section**: Static plots including line charts for sales trends, bar charts for store types, and scatter plots for temperature vs sales.
+  **Seaborn Section**: Enhanced static visualizations with regression lines, box plots for holiday analysis, and correlation heatmaps.
+  **Plotly Section**: Interactive widgets including hover-enabled scatter plots, dynamic bar charts, box plots, histograms, and interactive heatmaps.
 * No major revisions were needed, as the initial plan aligned with the data insights. Interactive Plotly charts were added later for better stakeholder engagement.
 * Data insights are communicated through visual storytelling: technical audiences see code and statistical outputs, while non-technical users interact with intuitive plots and hover tooltips.
 * The dashboard uses progressive complexity - static plots for reports, interactive elements for exploration. Color coding (e.g., red for holidays) and clear labels ensure accessibility. Technical users can view code cells, while executives focus on key visualizations with explanatory markdown.
@@ -126,29 +126,29 @@ Without AI assistance, the project would have required more manual research for 
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis Libraries
-* **pandas**: Used for data manipulation and ETL operations, e.g., `pd.merge()` to combine sales, stores, and features datasets.
-* **numpy**: Provided numerical operations and array handling, e.g., `np.nan` for missing value detection.
-* **matplotlib**: Created static visualizations, e.g., `plt.plot()` for sales trend lines.
-* **seaborn**: Enhanced statistical plots, e.g., `sns.heatmap()` for correlation matrices.
-* **plotly**: Built interactive dashboards, e.g., `px.scatter()` with hover data for exploratory analysis.
-* **scikit-learn**: Planned for future ML models, currently used for basic data preprocessing.
+**pandas**: Used for data manipulation and ETL operations, e.g., `pd.merge()` to combine sales, stores, and features datasets.
+**numpy**: Provided numerical operations and array handling, e.g., `np.nan` for missing value detection.
+**matplotlib**: Created static visualizations, e.g., `plt.plot()` for sales trend lines.
+**seaborn**: Enhanced statistical plots, e.g., `sns.heatmap()` for correlation matrices.
+**plotly**: Built interactive dashboards, e.g., `px.scatter()` with hover data for exploratory analysis.
+**scikit-learn**: Planned for future ML models, currently used for basic data preprocessing.
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
-- Dataset sourced from public retail sales data (similar to Walmart Kaggle dataset).
-- ETL and visualization patterns inspired by pandas documentation and Matplotlib/Seaborn tutorials.
-- Deployment instructions adapted from Heroku official documentation.
+Dataset sourced from public retail sales data (similar to Walmart Kaggle dataset).
+ETL and visualization patterns inspired by pandas documentation and Matplotlib/Seaborn tutorials.
+Deployment instructions adapted from Heroku official documentation.
 
 ### Media
 
-- No external media used; all visualizations generated from data.
+No external media used; all visualizations generated from data.
 
 
 
-## Acknowledgements (optional)
-* Special thanks to Vasi, Mark who provided support through this project.
+## Acknowledgements
+Special thanks to Vasi, Mark, Tom and Casper who provided support through this project in different capacities.
